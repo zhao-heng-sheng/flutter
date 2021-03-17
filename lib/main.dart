@@ -52,14 +52,15 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
             ),
-            FlatButton(
-                onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return newRoute();
-                  }));
-                },
-                child: Text("open new route"),
-                textColor: Colors.blue)
+            TextButton(
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) {
+                  return newRoute();
+                }));
+              },
+              child: Text("open new route"),
+              // textColor: Colors.blue
+            )
           ],
         ),
       ),
